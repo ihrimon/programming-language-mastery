@@ -2,24 +2,13 @@
 
 > A comprehensive multi-language programming repository featuring syntax, core concepts, practical examples, problem-solving techniques, and software engineering fundamentals for modern developers.
 
-### 📖 Overview
-
-Programming Language Mastery is designed to help developers understand the fundamentals of programming languages while building a strong software engineering foundation.
-
-Instead of focusing on a single language, this repository explores multiple programming languages, compares their syntax and paradigms, and demonstrates how common programming concepts are implemented across different ecosystems.
-
-Whether you're a beginner learning your first language or an experienced engineer exploring new technologies, this repository provides structured learning resources, practical examples, and engineering best practices.
-
 ### 🎯 Goals
 
 - Learn programming language fundamentals.
-- Understand common programming concepts across languages.
 - Explore different programming paradigms.
 - Improve problem-solving and algorithmic thinking.
-- Build a strong software engineering foundation.
 - Learn language-specific best practices.
 - Compare implementation approaches between languages.
-- Prepare for real-world development and technical interviews.
 
 ## 🚀 What You'll Learn
 
@@ -32,15 +21,6 @@ Whether you're a beginner learning your first language or an experienced enginee
 - Scope
 - Error Handling
 - Modules and Packages
-
-### Object-Oriented Programming
-
-- Classes and Objects
-- Encapsulation
-- Inheritance
-- Polymorphism
-- Abstraction
-- Composition
 
 ### Functional Programming
 
