@@ -21,10 +21,7 @@
 - [ ] What is C?
 - [ ] History of C Language (K&R C, ANSI C, C99, C11, C17, C23)
 - [ ] Why Learn C? (Use cases: OS, embedded systems, performance-critical apps)
-- [ ] C vs C++ vs Other Languages (key differences)
-- [ ] Structure of a C Program (`#include`, `main()`, statements, blocks)
-- [ ] Installation & Compiler Setup (GCC, Clang, MSVC)
-- [ ] IDE & Editor Setup (VS Code, CLion, Vim/Neovim)
+- [ ] C vs C++ (key differences)
 - [ ] GCC Compiler Basics (`gcc`, `clang` commands)
 - [ ] Compilation Pipeline (Preprocessing → Compiling → Assembling → Linking)
 - [ ] Compilation Flags (`-o`, `-Wall`, `-Wextra`, `-pedantic`, `-std=c99`, `-g`, `-O2`)
