@@ -255,24 +255,20 @@ void pointer_example(void) {
  * ─────────────────    ──────────────────────   ──────────────────────────────
  * Paradigm             Procedural only          Procedural + OOP + Generic
  * Classes/Objects      No                       Yes (class, struct with methods)
- * Inheritance          No                       Yes
- * Function Overload    No                       Yes
  * Templates            No                       Yes (generic programming)
  * Namespaces           No                       Yes
  * Exception Handling   No (use errno/setjmp)    Yes (try/catch/throw)
  * STL                  No                       Yes (vector, map, sort, etc.)
- * RAII                 No (manual free, malloc)         Yes (destructors)
+ * RAII                 No (manual free, malloc) Yes (destructors) (Rsc Acquisition Is Init)
  * Compile Speed        Faster                   Slower (more complex)
- * Runtime Overhead     Very low                 Slightly higher (vtables, RTTI)
+ * Runtime Overhead     Very low                 Slightly higher (virtualTables, RTTI= Runtime type info)
  * Use Case             OS, embedded, drivers    Apps, games, systems with OOP
- * Standard Library     Small (libc)             Large (STL + libc)
  * File Extension       .c / .h                  .cpp / .hpp / .h
  *
  * KEY POINT:
  * - C++ is a superset of C in many ways, but not 100% compatible.
- * - Valid C code is often (not always) valid C++.
  * - C++ adds complexity; C stays minimal and predictable.
- * - For embedded/kernel work, C is preferred — no hidden overhead.
+ * - For embedded/kernel work, C is preferred. 
  * - For application development, C++ offers powerful abstractions.
  */
  
@@ -314,19 +310,6 @@ void pointer_example(void) {
  * Step 3 — Run:            ./hello         (Linux/Mac)
  *                          hello.exe       (Windows)
  * Step 4 — Check errors:   read the terminal output carefully
- *
- * ─────────────────────────────────────────────────────────────────────────────
- * UNDERSTANDING COMPILER OUTPUT
- * ─────────────────────────────────────────────────────────────────────────────
- *
- * error:   code cannot compile — MUST fix before running
- * warning: code compiles but something looks suspicious — should fix
- * note:    extra context about an error or warning
- *
- * Example error message:
- *   hello.c:5:5: error: use of undeclared identifier 'x'
- *   │       │  │
- *   file  line col  message
  *
  * ─────────────────────────────────────────────────────────────────────────────
  * COMPILING TO OBJECT FILE ONLY (no linking yet)
