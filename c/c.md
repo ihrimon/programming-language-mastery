@@ -1,20 +1,19 @@
 # 📑 C Programming — Complete Roadmap & Checklist
 
-| # | Topics | Overview |
-|---|--------|----------|
-| 01 | [Introduction & Environment Setup](#01-introduction--environment-setup) | What is C, history, compilation pipeline, toolchain setup |
-| 02 | [Fundamentals & Data Types](#02-fundamentals--data-types) | Variables, constants, keywords, data types, I/O, operators |
-| 03 | [Control Flow & Decision Making](#03-control-flow--decision-making) | Conditionals, loops, branching, and program flow |
-| 04 | [Functions & Program Structure](#04-functions--program-structure) | Functions, scope, storage classes, recursion, header files |
-| 05 | [Arrays & Strings](#05-arrays--strings) | 1D/2D arrays, character arrays, string functions |
-| 06 | [Pointers & Memory Management](#06-pointers--memory-management) | Pointer basics, arithmetic, dynamic memory, memory errors |
-| 07 | [Structures, Unions & Enums](#07-structures-unions--enums) | User-defined types, bit-fields, alignment |
-| 08 | [File I/O & The Preprocessor](#08-file-io--the-preprocessor) | File handling, macros, header guards, command-line args |
-| 09 | [Advanced Concepts](#09-advanced-concepts) | Bitwise ops, error handling, advanced pointers, concurrency |
-| 10 | [Data Structures in C](#10-data-structures-in-c) | Linked lists, stacks, queues, trees, hash tables from scratch |
-| 11 | [Professional Tooling & Best Practices](#11-professional-tooling--best-practices) | GDB, Valgrind, Makefiles, secure coding, C standards |
-| 12 | [Mini Projects & Practice](#12-mini-projects--practice) | Hands-on projects to consolidate all concepts |
-
+| #   | Topics                                                                            | Overview                                                      |
+| --- | --------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 01  | [Introduction & Environment Setup](#01-introduction--environment-setup)           | What is C, history, compilation pipeline, toolchain setup     |
+| 02  | [Fundamentals & Data Types](#02-fundamentals--data-types)                         | Variables, constants, keywords, data types, I/O, operators    |
+| 03  | [Control Flow & Decision Making](#03-control-flow--decision-making)               | Conditionals, loops, branching, and program flow              |
+| 04  | [Functions & Program Structure](#04-functions--program-structure)                 | Functions, scope, storage classes, recursion, header files    |
+| 05  | [Arrays & Strings](#05-arrays--strings)                                           | 1D/2D arrays, character arrays, string functions              |
+| 06  | [Pointers & Memory Management](#06-pointers--memory-management)                   | Pointer basics, arithmetic, dynamic memory, memory errors     |
+| 07  | [Structures, Unions & Enums](#07-structures-unions--enums)                        | User-defined types, bit-fields, alignment                     |
+| 08  | [File I/O & The Preprocessor](#08-file-io--the-preprocessor)                      | File handling, macros, header guards, command-line args       |
+| 09  | [Advanced Concepts](#09-advanced-concepts)                                        | Bitwise ops, error handling, advanced pointers, concurrency   |
+| 10  | [Data Structures in C](#10-data-structures-in-c)                                  | Linked lists, stacks, queues, trees, hash tables from scratch |
+| 11  | [Professional Tooling & Best Practices](#11-professional-tooling--best-practices) | GDB, Valgrind, Makefiles, secure coding, C standards          |
+| 12  | [Mini Projects & Practice](#12-mini-projects--practice)                           | Hands-on projects to consolidate all concepts                 |
 
 ## 01. Introduction & Environment Setup
 
@@ -31,7 +30,7 @@
 
 ## 02. Fundamentals & Data Types
 
-- [ ] Keywords & Identifiers (reserved words, naming rules)
+- [x] Keywords & Identifiers (reserved words, naming rules)
 - [ ] Variables — Declaration, Initialization, Assignment
 - [ ] Constants (`const`, `#define` literals)
 - [ ] Primitive Data Types (`int`, `char`, `float`, `double`, `void`)
@@ -60,7 +59,6 @@
 - [ ] Explicit Type Casting (`(type)expression`)
 - [ ] Integer Overflow & Undefined Behavior
 
-
 ## 03. Control Flow & Decision Making
 
 - [ ] `if` Statement
@@ -78,7 +76,6 @@
 - [ ] `goto` Statement (and why to avoid it)
 - [ ] Infinite Loops & Loop Control Patterns
 - [ ] Short-Circuit Evaluation (`&&`, `||`)
-
 
 ## 04. Functions & Program Structure
 
@@ -192,6 +189,7 @@
 ## 08. File I/O & The Preprocessor
 
 ### File Handling
+
 - [ ] File Handling Basics — the `FILE*` type
 - [ ] Opening & Closing Files (`fopen`, `fclose`)
 - [ ] File Modes (`"r"`, `"w"`, `"a"`, `"r+"`, `"w+"`, `"a+"`, `"b"` suffix)
@@ -206,6 +204,7 @@
 - [ ] Renaming & Deleting Files (`rename`, `remove`)
 
 ### The C Preprocessor
+
 - [ ] `#include` — File Inclusion (`<>` vs `""`)
 - [ ] `#define` — Object-like Macros (constants)
 - [ ] `#define` — Function-like Macros
@@ -222,6 +221,7 @@
 - [ ] `#error` and `#warning` Directives
 
 ### Command-Line Arguments
+
 - [ ] `int main(int argc, char *argv[])`
 - [ ] Parsing Arguments Manually
 - [ ] Using `getopt` / `getopt_long` (POSIX)
@@ -229,6 +229,7 @@
 ## 09. Advanced Concepts
 
 ### Bitwise Operations & Bit Manipulation
+
 - [ ] Bitwise AND, OR, XOR, NOT, Left/Right Shift
 - [ ] Setting, Clearing, Toggling, Checking a Bit
 - [ ] Bit Masks and Flags
@@ -236,12 +237,14 @@
 - [ ] Practical Uses (permissions, packed data, hardware registers)
 
 ### Error Handling
+
 - [ ] `errno` and `<errno.h>`
 - [ ] `perror` and `strerror`
 - [ ] Return-Code Conventions (returning `-1`, `NULL`, `0`)
 - [ ] `setjmp` / `longjmp` — Non-Local Jumps (`<setjmp.h>`)
 
 ### Advanced Pointer Concepts
+
 - [ ] Pointer to Array (`int (*p)[N]`)
 - [ ] Array of Pointers (`int *p[N]`)
 - [ ] Multi-Level Pointer Dereferencing
@@ -251,6 +254,7 @@
 - [ ] Opaque Pointers (forward declarations, information hiding)
 
 ### Type System & Expressions
+
 - [ ] Integer Promotion Rules
 - [ ] Usual Arithmetic Conversions
 - [ ] Sequence Points & Undefined Behavior
@@ -260,6 +264,7 @@
 - [ ] `_Generic` — Type-Generic Macros (C11+)
 
 ### Standard Library Deep Dive
+
 - [ ] `<stdlib.h>` — `abs`, `div`, `rand`, `srand`, `exit`, `atexit`, `qsort`, `bsearch`
 - [ ] `<math.h>` — `sqrt`, `pow`, `sin`, `cos`, `ceil`, `floor`, `fabs`, `log`, `exp`
 - [ ] `<time.h>` — `time`, `clock`, `difftime`, `mktime`, `strftime`, `struct tm`
@@ -272,11 +277,13 @@
 - [ ] `<threads.h>` — C11 threads (overview)
 
 ### Signals & Process Control
+
 - [ ] Signal Handling (`signal`, `raise`, `<signal.h>`)
 - [ ] Common Signals (`SIGINT`, `SIGSEGV`, `SIGTERM`, `SIGFPE`)
 - [ ] `exit`, `_Exit`, `atexit`, `abort`
 
 ### Concurrency (C11 & POSIX)
+
 - [ ] Overview of Concurrency in C
 - [ ] C11 Threads (`<threads.h>`) — `thrd_create`, `thrd_join`
 - [ ] Mutexes (`mtx_t`, `mtx_lock`, `mtx_unlock`)
@@ -285,6 +292,7 @@
 - [ ] POSIX Threads (`pthreads`) — Overview
 
 ### Undefined Behavior & Platform Portability
+
 - [ ] What is Undefined Behavior (UB)?
 - [ ] Common Sources of UB (signed overflow, null deref, strict aliasing)
 - [ ] Strict Aliasing Rule
@@ -313,6 +321,7 @@
 ## 11. Professional Tooling & Best Practices
 
 ### Modular Code & Build Systems
+
 - [ ] Writing Modular Code (`.c` implementation + `.h` interface)
 - [ ] Forward Declarations & Dependency Management
 - [ ] Writing Basic Makefiles (`CC`, `CFLAGS`, `all`, `clean`, pattern rules)
@@ -321,6 +330,7 @@
 - [ ] Version Control with Git (basic workflow for C projects)
 
 ### Debugging
+
 - [ ] Debugging with GDB — launching, breakpoints, stepping (`next`, `step`)
 - [ ] GDB — Inspecting Variables, Call Stack, Registers
 - [ ] GDB — Watchpoints, Conditional Breakpoints
@@ -329,6 +339,7 @@
 - [ ] `printf` Debugging Patterns (flushing with `fflush`)
 
 ### Memory Debugging & Analysis
+
 - [ ] Valgrind — `memcheck` tool (leaks, invalid reads/writes)
 - [ ] Valgrind — `callgrind` for profiling
 - [ ] AddressSanitizer (`-fsanitize=address`)
@@ -337,6 +348,7 @@
 - [ ] Static Analysis Tools (`clang-tidy`, `cppcheck`, `splint`)
 
 ### Secure Coding Practices
+
 - [ ] Never use `gets()` — use `fgets()` instead
 - [ ] Use `strncpy`, `strncat` over unsafe variants
 - [ ] Always check return values of `malloc`, `fopen`, etc.
@@ -346,6 +358,7 @@
 - [ ] CERT C Coding Standard overview
 
 ### C Standards
+
 - [ ] C89/C90 — ANSI C, original standard
 - [ ] C99 — VLAs, `//` comments, `<stdint.h>`, `<stdbool.h>`, designated initializers
 - [ ] C11 — `_Generic`, `_Static_assert`, atomics, threads, anonymous structs
@@ -353,6 +366,7 @@
 - [ ] C23 — `#embed`, `nullptr`, `typeof`, attributes, `bool`/`true`/`false` as keywords
 
 ### Code Quality
+
 - [ ] Consistent Coding Style (K&R, Allman, Google C Style Guide)
 - [ ] Using `clang-format` for auto-formatting
 - [ ] Writing Meaningful Comments and Documentation
