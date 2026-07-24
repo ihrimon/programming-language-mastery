@@ -2,9 +2,6 @@
 // TOPIC 6: `_Bool` / `<stdbool.h>` (`true`, `false`)
 // =============================================================================
 
-#include <stdio.h>
-#include <stdbool.h>   // gives us: bool, true, false (C99+)
-
 /*
  * C did NOT have a native boolean type until C99.
  *
@@ -23,6 +20,9 @@
  * C23 UPDATE:
  * - bool/true/false become actual KEYWORDS (no #include needed).
  */
+
+#include <stdio.h>
+#include <stdbool.h>   // gives us: bool, true, false (C99+)
 
 void bool_example(void) {
     _Bool raw_flag = 1;              // native _Bool type
@@ -45,7 +45,3 @@ int main(void) {
     bool_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 06-bool-type.c -o 06-bool-type
-// ─────────────────────────────────────────────────────────────────────────────

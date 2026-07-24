@@ -2,10 +2,6 @@
 // TOPIC 9: Limits of Types (`<limits.h>`, `<float.h>`)
 // =============================================================================
 
-#include <stdio.h>
-#include <limits.h>
-#include <float.h>
-
 /*
  * <limits.h>  → defines MIN/MAX constants for INTEGER types
  * <float.h>   → defines MIN/MAX/precision constants for FLOATING-POINT types
@@ -22,6 +18,10 @@
  *   FLT_MIN, FLT_MAX, FLT_DIG   (float: min, max, decimal digits of precision)
  *   DBL_MIN, DBL_MAX, DBL_DIG   (double: same, more precision)
  */
+
+#include <stdio.h>
+#include <limits.h>
+#include <float.h>
 
 void limits_example(void) {
     printf("CHAR_BIT  = %d\n", CHAR_BIT);
@@ -43,7 +43,3 @@ int main(void) {
     limits_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 09-limits-of-types.c -o 09-limits-of-types
-// ─────────────────────────────────────────────────────────────────────────────

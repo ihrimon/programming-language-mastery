@@ -2,9 +2,6 @@
 // TOPIC 8: Fixed-Width Integer Types (`<stdint.h>`)
 // =============================================================================
 
-#include <stdio.h>
-#include <stdint.h>
-
 /*
  * Since the size of `int`/`long` etc. varies by platform, <stdint.h> (C99+)
  * provides EXACT-WIDTH integer types with guaranteed sizes everywhere.
@@ -21,6 +18,8 @@
  *   intmax_t       → largest integer type supported
  *   intptr_t       → integer large enough to hold a pointer
  */
+#include <stdio.h>
+#include <stdint.h>
 
 void fixed_width_example(void) {
     int8_t   small   = -128;
@@ -46,7 +45,3 @@ int main(void) {
     fixed_width_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 08-fixed-width-integers.c -o 08-fixed-width-integers
-// ─────────────────────────────────────────────────────────────────────────────

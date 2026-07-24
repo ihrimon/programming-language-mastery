@@ -2,8 +2,6 @@
 // TOPIC 10: Escape Sequences (`\n`, `\t`, `\\`, `\"`, `\0`, `\xNN`, `\oNNN`)
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * Escape sequences let you represent special/non-printable characters
  * inside a char or string literal, using a backslash (\) prefix.
@@ -21,6 +19,8 @@
  *   \xNN  → character by HEX value  (e.g. \x41 = 'A')
  *   \NNN  → character by OCTAL value (e.g. \101 = 'A')
  */
+
+#include <stdio.h>
 
 void escape_sequences_example(void) {
     printf("Line1\nLine2\n");                 // \n newline
@@ -40,7 +40,3 @@ int main(void) {
     escape_sequences_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 10-escape-sequences.c -o 10-escape-sequences
-// ─────────────────────────────────────────────────────────────────────────────

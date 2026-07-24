@@ -5,8 +5,7 @@
 #include <stdio.h>
 
 /*
- * sizeof is a COMPILE-TIME operator (not a function) that returns the size,
- * in bytes, of a type or variable. Its result type is `size_t` (unsigned).
+ * sizeof is a COMPILE-TIME operator (not a function) that returns the size.
  *
  * SYNTAX:
  *   sizeof(type)        e.g. sizeof(int)
@@ -45,7 +44,3 @@ int main(void) {
     sizeof_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 07-sizeof-operator.c -o 07-sizeof-operator
-// ─────────────────────────────────────────────────────────────────────────────
