@@ -75,11 +75,6 @@ void increment_decrement_example(void) {
     int b = 5;
     int b_prefix_result = ++b;     // increments FIRST, then returns 6 (new value)
     printf("++b (prefix)  returned %d, b is now %d\n", b_prefix_result, b);
-
-    // COMMON PITFALL: undefined behavior when a variable is modified more
-    // than once (or read+written) between sequence points, e.g.
-    //   i = i++ + ++i;              -> AVOID THIS
-    //   printf("%d %d", a++, a);    -> AVOID THIS (order of arg eval is unspecified)
 }
 
 // --- 14g: Ternary / Conditional Operator (?:) ---
@@ -94,7 +89,7 @@ void ternary_operator_example(void) {
     printf("max(a, b) = %d\n", max);
 }
 
-// --- 14h: sizeof Operator (see also 07-sizeof-operator.c) ---
+// --- 14h: sizeof Operator ---
 void sizeof_operator_example(void) {
     printf("sizeof(3 + 4.5) = %zu (result type is double -> 8)\n",
            sizeof(3 + 4.5));
@@ -166,7 +161,3 @@ int main(void) {
     precedence_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 14-operators.c -o 14-operators
-// ─────────────────────────────────────────────────────────────────────────────

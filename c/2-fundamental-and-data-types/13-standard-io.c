@@ -36,31 +36,22 @@ void io_example(void) {
     puts("puts() automatically appends a newline");
 
     // --- safe string input (commented out — would block waiting for input) ---
-    /*
     char name[50];
     printf("Enter your name: ");
     fgets(name, sizeof(name), stdin);   // SAFE: bounded read
     printf("Hello, %s", name);
-    */
 
     // --- reading a single character (commented out — needs real stdin) ---
-    /*
     printf("Press any key: ");
     int ch = getchar();
     printf("You pressed: %c\n", ch);
-    */
+
 
     // --- scanf usage pattern (commented out — needs real stdin) ---
-    /*
     int age;
     printf("Enter age: ");
     scanf("%d", &age);           // '&' required — scanf needs the ADDRESS
     printf("age = %d\n", age);
-    */
-
-    // NEVER do this:
-    // char buffer[10];
-    // gets(buffer);   // ERROR/removed in C11 — unbounded read, buffer overflow risk
 }
 
 int main(void) {
@@ -68,7 +59,3 @@ int main(void) {
     io_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 13-standard-io.c -o 13-standard-io
-// ─────────────────────────────────────────────────────────────────────────────

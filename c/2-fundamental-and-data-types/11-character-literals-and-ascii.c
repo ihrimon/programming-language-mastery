@@ -2,8 +2,6 @@
 // TOPIC 11: Character Literals and ASCII Table
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * A character literal is a single character in single quotes: 'A', '7', '\n'
  * Internally, a char is just a small INTEGER — its value is the character's
@@ -21,6 +19,8 @@
  *   digit_char - '0'         → converts a digit character to its numeric value
  *   toupper(c) == c - 32     → manual uppercase (for 'a'-'z' only; prefer <ctype.h>)
  */
+
+#include <stdio.h>
 
 void ascii_example(void) {
     char letter = 'A';
@@ -44,7 +44,3 @@ int main(void) {
     ascii_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 11-character-literals-and-ascii.c -o 11-character-literals-and-ascii
-// ─────────────────────────────────────────────────────────────────────────────

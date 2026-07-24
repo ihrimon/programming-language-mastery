@@ -2,8 +2,6 @@
 // TOPIC 12: Format Specifiers (`%d`, `%f`, `%c`, `%s`, `%p`, `%x`, `%u`, `%ld`, etc.)
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * Format specifiers tell printf/scanf HOW to interpret arguments.
  *
@@ -33,6 +31,8 @@
  *   %8.2f    → 8 wide total, 2 after decimal
  */
 
+#include <stdio.h>
+
 void format_specifiers_example(void) {
     int i = -42;
     unsigned int u = 42;
@@ -53,7 +53,6 @@ void format_specifiers_example(void) {
     printf("%%5d -> [%5d]  (width padding)\n", 7);
     printf("%%-5d-> [%-5d]  (left-aligned)\n", 7);
     printf("%%05d-> [%05d]  (zero-padded)\n", 7);
-    printf("%%%%  -> %%\n");   // literal percent sign
 }
 
 int main(void) {
@@ -61,7 +60,3 @@ int main(void) {
     format_specifiers_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 12-format-specifiers.c -o 12-format-specifiers
-// ─────────────────────────────────────────────────────────────────────────────

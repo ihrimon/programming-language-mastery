@@ -2,8 +2,6 @@
 // TOPIC 16: Explicit Type Casting (`(type)expression`)
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * A CAST forces a conversion the programmer wants, overriding the compiler's
  * default (implicit) behavior. Syntax:  (target_type) expression
@@ -13,9 +11,9 @@
  * - Truncating a float to an int (drops decimals): (int)3.99  -> 3
  * - Converting a generic void* to a specific type: (int *)ptr
  * - Silencing "implicit conversion" compiler warnings intentionally.
- *
- * CASTING NEVER "ROUNDS" — float-to-int casts TRUNCATE toward zero.
  */
+
+#include <stdio.h>
 
 void explicit_casting_example(void) {
     int a = 7, b = 2;
@@ -39,7 +37,3 @@ int main(void) {
     explicit_casting_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 16-explicit-type-casting.c -o 16-explicit-type-casting
-// ─────────────────────────────────────────────────────────────────────────────
