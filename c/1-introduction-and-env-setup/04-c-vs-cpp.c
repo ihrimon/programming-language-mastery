@@ -2,8 +2,6 @@
 // TOPIC 4: C vs C++
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * ─────────────────────────────────────────────────────────────────────────────
  * C vs C++
@@ -30,6 +28,8 @@
  * - For application development, C++ offers powerful abstractions.
  */
 
+#include <stdio.h>
+
 void c_vs_cpp_example(void) {
     printf("See the comment table above for the full C vs C++ comparison.\n");
 }
@@ -39,7 +39,3 @@ int main(void) {
     c_vs_cpp_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 04-c-vs-cpp.c -o 04-c-vs-cpp
-// ─────────────────────────────────────────────────────────────────────────────

@@ -2,9 +2,6 @@
 // TOPIC 3: Why Learn C?
 // =============================================================================
 
-#include <stdio.h>
-#include <stdlib.h>     // malloc, free
-
 /*
  * 1. FOUNDATION OF MODERN COMPUTING
  *    - Linux kernel, Windows NT core, macOS core → all written in C
@@ -52,6 +49,9 @@
  * └─────────────────────┴────────────────────────────────────┘
  */
 
+#include <stdio.h>
+#include <stdlib.h>     // malloc, free
+
 // --- Example: manual memory management (why C is powerful AND dangerous) ---
 void memory_example(void) {
     // allocate memory for 5 integers on the HEAP
@@ -94,7 +94,3 @@ int main(void) {
     pointer_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 03-why-learn-c.c -o 03-why-learn-c
-// ─────────────────────────────────────────────────────────────────────────────

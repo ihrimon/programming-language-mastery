@@ -24,8 +24,7 @@
  * - Header files : .h
  */
 
-// Simplest possible C program — demonstrates the basic structure
-#include <stdio.h>   // standard I/O library (gives us printf, scanf, etc.)
+#include <stdio.h>   // standard I/O library 
 
 int main(void) {
     // printf is defined in <stdio.h>
@@ -33,17 +32,3 @@ int main(void) {
 
     return 0;   // 0 means the program ran successfully
 }
-
-/*
- * BREAKDOWN OF THE ABOVE PROGRAM:
- *
- * #include <stdio.h>  → tells the preprocessor to include the standard I/O header
- * int main(void)      → entry point; int = return type, void = no parameters
- * { ... }             → a block — groups statements together
- * printf(...)         → function call — prints text to the terminal
- * return 0;           → exit code sent back to the OS (0 = success)
- */
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 01-what-is-c.c -o 01-what-is-c
-// ─────────────────────────────────────────────────────────────────────────────

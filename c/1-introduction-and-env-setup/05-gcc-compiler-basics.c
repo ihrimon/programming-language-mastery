@@ -2,9 +2,6 @@
 // TOPIC 5: GCC Compiler Basics
 // =============================================================================
 
-#include <stdio.h>
-#include <math.h>   // sqrt, pow, sin, etc.
-
 /*
  * GCC = GNU Compiler Collection
  * Clang = LLVM-based compiler (alternative to GCC, same flags mostly)
@@ -60,6 +57,9 @@
  *
  * -l<name> tells the linker to include lib<name>.a or lib<name>.so
  */
+ 
+#include <stdio.h>
+#include <math.h>   // sqrt, pow, sin, etc.
 
 // Demonstrating that math.h requires -lm flag at compile time
 void gcc_math_example(void) {
