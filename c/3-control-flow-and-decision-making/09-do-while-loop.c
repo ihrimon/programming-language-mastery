@@ -2,8 +2,6 @@
 // TOPIC 9: `do...while` Loop
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * `do...while` is like `while`, but the condition is checked AFTER the body
  * runs — guaranteeing the body executes AT LEAST ONCE, even if the condition
@@ -12,15 +10,14 @@
  * SYNTAX:
  *   do {
  *       // runs at least once
- *   } while (condition);       // note the required trailing semicolon
+ *   } while (condition);      
  *
  * WHEN TO USE:
  * - Menu loops (show the menu once, then repeat while the user wants more)
  * - Input validation (ask for input at least once, re-ask while invalid)
- *
- * COMMON MISTAKE: forgetting the semicolon after `while (condition)` —
- * unlike `while` and `for`, `do...while` REQUIRES it.
  */
+
+#include <stdio.h>
 
 void do_while_example(void) {
     // body runs once even though the condition is immediately false
@@ -53,7 +50,3 @@ int main(void) {
     do_while_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 09-do-while-loop.c -o 09-do-while-loop
-// ─────────────────────────────────────────────────────────────────────────────

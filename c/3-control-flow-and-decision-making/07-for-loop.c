@@ -2,8 +2,6 @@
 // TOPIC 7: `for` Loop (initialization, condition, update)
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * `for` is the standard loop for a KNOWN or COUNTABLE number of iterations.
  * It packs three parts into one line:
@@ -13,17 +11,12 @@
  *       // loop body
  *   }
  *
- *   - initialization → runs ONCE, before the loop starts (e.g. int i = 0)
+ *   - initialization → runs ONCE, before the loop starts
  *   - condition      → checked BEFORE each iteration; loop runs while true
- *   - update         → runs AFTER each iteration's body (e.g. i++)
- *
- * EXECUTION ORDER: init -> check condition -> body -> update -> check condition -> ...
- *
- * - In C99+, the loop variable can be declared inside the for (`int i = 0`);
- *   in C89 it must be declared before the loop.
- * - Any of the three clauses may be left empty: `for (;;)` is an infinite loop
- *   (see 14-infinite-loops-and-loop-control-patterns.c).
+ *   - update         → runs AFTER each iteration's body 
  */
+
+#include <stdio.h>
 
 void for_loop_example(void) {
     // basic counting loop
@@ -41,7 +34,7 @@ void for_loop_example(void) {
         printf("step: %d\n", i);
     }
 
-    // multiple variables using the comma operator (see 02-fundamental-and-data-types)
+    // multiple variables using the comma operator 
     for (int i = 0, j = 10; i < j; i++, j--) {
         printf("i=%d j=%d\n", i, j);
     }
@@ -59,7 +52,3 @@ int main(void) {
     for_loop_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 07-for-loop.c -o 07-for-loop
-// ─────────────────────────────────────────────────────────────────────────────

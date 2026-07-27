@@ -2,8 +2,6 @@
 // TOPIC 10: Nested Loops
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * A "nested loop" is a loop placed inside the body of another loop.
  * For each single iteration of the OUTER loop, the INNER loop runs to
@@ -12,6 +10,8 @@
  * Any combination of for/while/do-while can be nested inside each other.
  * Common uses: 2D grids/matrices, multiplication tables, pattern printing.
  */
+
+#include <stdio.h>
 
 void nested_loops_example(void) {
     // basic outer/inner iteration count demo
@@ -46,7 +46,3 @@ int main(void) {
     nested_loops_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 10-nested-loops.c -o 10-nested-loops
-// ─────────────────────────────────────────────────────────────────────────────
