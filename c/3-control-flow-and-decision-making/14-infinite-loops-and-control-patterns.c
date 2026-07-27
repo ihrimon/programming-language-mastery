@@ -2,8 +2,6 @@
 // TOPIC 14: Infinite Loops & Loop Control Patterns
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * An INFINITE LOOP has a condition that never becomes false — it runs
  * forever unless stopped from inside (via `break`, `return`, `exit()`) or
@@ -13,16 +11,12 @@
  *   for (;;)       { ... }     // all three for-clauses omitted — idiomatic C
  *   while (1)      { ... }     // condition is always non-zero (true)
  *   do { ... } while (1);      // same idea, checked at the bottom
- *
- * WHY USE THEM DELIBERATELY:
- * - Event loops / servers that run "forever" until externally stopped
- * - Menu-driven programs that loop until the user chooses "exit"
- * - Loops whose exit condition is more naturally expressed with an
- *   internal `if (...) break;` than in the loop header
- *
+ * *
  * THE DANGER: writing one BY ACCIDENT (forgetting to update a loop
  * variable, or a condition that can never become false) hangs the program.
  */
+
+#include <stdio.h>
 
 void infinite_loop_patterns_example(void) {
     // `for (;;)` with an internal break — a controlled "infinite" loop
@@ -63,7 +57,3 @@ int main(void) {
     infinite_loop_patterns_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 14-infinite-loops-and-loop-control-patterns.c -o 14-infinite-loops-and-loop-control-patterns
-// ─────────────────────────────────────────────────────────────────────────────

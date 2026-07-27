@@ -2,13 +2,12 @@
 // TOPIC 12: `continue` Statement
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * `continue` skips the REST of the current loop iteration's body and jumps
- * straight to the next iteration — for `for` loops, this means the update
- * expression still runs; the loop does NOT exit (unlike `break`).
+ * straight to the next iteration — for `for` loops, 
  */
+
+#include <stdio.h>
 
 void continue_example(void) {
     // skip even numbers, print only odd ones
@@ -47,7 +46,3 @@ int main(void) {
     continue_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 12-continue-statement.c -o 12-continue-statement
-// ─────────────────────────────────────────────────────────────────────────────
