@@ -2,8 +2,6 @@
 // TOPIC 11: `break` Statement
 // =============================================================================
 
-#include <stdio.h>
-
 /*
  * `break` immediately exits the INNERMOST enclosing loop (for/while/do-while)
  * or `switch` statement — execution resumes at the first line AFTER it.
@@ -11,6 +9,8 @@
  * IMPORTANT: in nested loops, `break` only exits ONE level (the innermost
  * loop it is directly inside) — NOT all enclosing loops.
  */
+
+#include <stdio.h>
 
 void break_example(void) {
     // stop a loop early once a condition is met
@@ -51,7 +51,3 @@ int main(void) {
     break_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 11-break-statement.c -o 11-break-statement
-// ─────────────────────────────────────────────────────────────────────────────
