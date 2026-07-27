@@ -57,7 +57,7 @@
  *
  * -l<name> tells the linker to include lib<name>.a or lib<name>.so
  */
- 
+
 #include <stdio.h>
 #include <math.h>   // sqrt, pow, sin, etc.
 
@@ -76,7 +76,3 @@ int main(void) {
     gcc_math_example();
     return 0;
 }
-
-// ─────────────────────────────────────────────────────────────────────────────
-// gcc -std=c11 -Wall -Wextra -pedantic -g 05-gcc-compiler-basics.c -lm -o 05-gcc-compiler-basics
-// ─────────────────────────────────────────────────────────────────────────────
