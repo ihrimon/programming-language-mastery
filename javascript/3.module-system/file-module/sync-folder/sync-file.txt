@@ -1,2 +1,0 @@
-Hello node js with synchronous way
-something added for file update
